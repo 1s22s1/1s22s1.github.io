@@ -11,16 +11,32 @@
 
 <body>
     <h1>コードのかけら</h1>
-    <h2>8進数の11を10進数へ変更</h2>
+    <h2>8進数の11を10進数へ変換</h2>
     <pre><code>
 julia> parse(Int, "11", base = 8)
 9
    </code></pre>
 
-    <h2>10進数の10を9進数へ変更</h2>
+    <h2>10進数の10を9進数へ変換</h2>
     <pre><code>
 julia> string(10, base = 9)
 "11"
+   </code></pre>
+    
+    <h2>辞書のバリューで並び替え</h2>
+    <pre><code>
+julia> dict = Dict('a' => 3, 'b' => 2, 'c' => 1)
+Dict{Char, Int64} with 3 entries:
+  'a' => 3
+  'c' => 1
+  'b' => 2
+
+julia> sort(collect(dict), by=x->x[2])
+3-element Vector{Pair{Char, Int64}}:
+ 'c' => 1
+ 'b' => 2
+ 'a' => 3
+
    </code></pre>
 </body>
 
