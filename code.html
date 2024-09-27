@@ -37,6 +37,11 @@ julia> sort(collect(dict), by=x->x[2])
  'b' => 2
  'a' => 3
    </code></pre>
+
+    <h2>内包表記で10行分読み込む</h2>
+    <pre><code>
+julia> [readline() for _ ∈ 1:10]
+   </code></pre>
 </body>
 
 </html>
