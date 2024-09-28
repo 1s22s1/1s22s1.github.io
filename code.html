@@ -42,6 +42,14 @@ julia> sort(collect(dict), by=x->x[2])
     <pre><code>
 julia> [readline() for _ ∈ 1:10]
    </code></pre>
+    <h2>変数の文字列展開</h2>
+    <pre><code>
+julia> str = "gomora"
+"gomora"
+
+julia> "+$(str)+"
+"+gomora+"
+   </code></pre>
 </body>
 
 </html>
