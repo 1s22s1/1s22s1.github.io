@@ -50,6 +50,18 @@ julia> str = "gomora"
 julia> "+$(str)+"
 "+gomora+"
    </code></pre>
+
+        <h2>N桁の数字と一致</h2>
+    <pre><code>
+julia> num = 3
+3
+
+julia> occursin(Regex("\\d{$num}"), "12")
+false
+
+julia> occursin(Regex("\\d{$num}"), "123")
+true
+   </code></pre>
 </body>
 
 </html>
