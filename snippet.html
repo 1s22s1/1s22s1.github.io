@@ -71,6 +71,15 @@ false
 julia> occursin(Regex("\\d{$num}"), "123")
 true
    </code></pre>
+
+    <h2>末尾の文字を先頭へ移動</h2>
+    <pre><code>
+julia> s = "abc"
+"abc"
+
+julia> s[end] * s[begin:end-1]
+"cab"
+   </code></pre>
 </body>
 
 </html>
