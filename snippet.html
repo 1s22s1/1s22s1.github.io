@@ -83,13 +83,25 @@ julia> s[end] * s[begin:end-1]
 
     <h2>配列から3以上5以下の要素を取得</h2>
     <pre><code>
-    julia> arr = collect(1:10)
-    julia> arr[3 .≤ arr .≤ 5]
-    3-element Vector{Int64}:
-     3
-     4
-     5
+julia> arr = collect(1:10)
+julia> arr[3 .≤ arr .≤ 5]
+3-element Vector{Int64}:
+3
+4
+5
   </code></pre>
+
+    <h2>原点からの距離</h2>
+    <pre><code>
+julia> hypot(1, 2)
+2.23606797749979
+</code></pre>
+
+    <h2>小数点の桁数を指定して表示</h2>
+    <pre><code>
+julia> @printf("%.3f\n",2.4142135623)
+2.414
+</code></pre>
 </body>
 
 </html>
