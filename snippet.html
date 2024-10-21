@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>コードのかけら</title>
+    <title>コードスニペット</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <h1>コードのかけら</h1>
+    <h1>コードスニペット</h1>
     <h2>8進数の11を10進数へ変換</h2>
     <pre><code>
 julia> parse(Int, "11", base = 8)
@@ -47,19 +47,6 @@ julia> sort(collect(dict), by=x->x[2])
  'a' => 3
    </code></pre>
 
-    <h2>内包表記で10行分読み込む</h2>
-    <pre><code>
-julia> [readline() for _ ∈ 1:10]
-   </code></pre>
-    <h2>変数の文字列展開</h2>
-    <pre><code>
-julia> str = "gomora"
-"gomora"
-
-julia> "+$(str)+"
-"+gomora+"
-   </code></pre>
-
     <h2>N桁の数字と一致</h2>
     <pre><code>
 julia> num = 3
@@ -70,15 +57,6 @@ false
 
 julia> occursin(Regex("\\d{$num}"), "123")
 true
-   </code></pre>
-
-    <h2>末尾の文字を先頭へ移動</h2>
-    <pre><code>
-julia> s = "abc"
-"abc"
-
-julia> s[end] * s[begin:end-1]
-"cab"
    </code></pre>
 
     <h2>配列から3以上5以下の要素を取得</h2>
