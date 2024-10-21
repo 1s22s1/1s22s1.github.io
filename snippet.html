@@ -103,6 +103,16 @@ julia> using Printf
 
 julia> @printf("%.3f\n", 2.4142135623)
 2.414
+
+<h2>フラットな配列にする</h2>
+<pre><code>
+    julia> a = [[1, 2], [3, 4]]
+    julia> collect(Iterators.flatten(a))
+    4-element Vector{Int64}:
+     1
+     2
+     3
+     4
 </code></pre>
 </body>
 
