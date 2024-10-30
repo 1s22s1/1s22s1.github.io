@@ -32,21 +32,6 @@ julia> string(10, base = 9)
 "11"
    </code></pre>
 
-    <h2>辞書のバリューで並び替え</h2>
-    <pre><code>
-julia> dict = Dict('a' => 3, 'b' => 2, 'c' => 1)
-Dict{Char, Int64} with 3 entries:
-  'a' => 3
-  'c' => 1
-  'b' => 2
-
-julia> sort(collect(dict), by=x->x[2])
-3-element Vector{Pair{Char, Int64}}:
- 'c' => 1
- 'b' => 2
- 'a' => 3
-   </code></pre>
-
     <h2>N桁の数字と一致</h2>
     <pre><code>
 julia> num = 3
@@ -83,8 +68,8 @@ julia> @printf("%.3f\n", 2.4142135623)
 2.414
 </code></pre>
 
-<h2>フラットな配列にする</h2>
-<pre><code>
+    <h2>フラットな配列にする</h2>
+    <pre><code>
     julia> a = [[1, 2], [3, 4]]
     julia> collect(Iterators.flatten(a))
     4-element Vector{Int64}:
