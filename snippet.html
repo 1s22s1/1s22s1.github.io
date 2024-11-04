@@ -44,6 +44,22 @@ julia> occursin(Regex("\\d{$num}"), "123")
 true
    </code></pre>
 
+    <h2>小数点の桁数を指定して表示</h2>
+    <pre><code>
+julia> using Printf
+
+julia> @printf("%.3f\n", 2.4142135623)
+2.414
+</code></pre>
+
+    <h2>6桁分0を右詰めして表示</h2>
+    <pre><code>
+julia> using Printf
+
+julia> @printf("%06d", 1998)
+001998
+</code></pre>
+
     <h2>配列から3以上5以下の要素を取得</h2>
     <pre><code>
 julia> arr = collect(1:10)
@@ -52,7 +68,7 @@ julia> arr[3 .≤ arr .≤ 5]
 3
 4
 5
-  </code></pre>
+</code></pre>
 
     <h2>原点からの距離</h2>
     <pre><code>
@@ -60,13 +76,6 @@ julia> hypot(1, 2)
 2.23606797749979
 </code></pre>
 
-    <h2>小数点の桁数を指定して表示</h2>
-    <pre><code>
-julia> using Printf
-
-julia> @printf("%.3f\n", 2.4142135623)
-2.414
-</code></pre>
 </body>
 
 </html>
