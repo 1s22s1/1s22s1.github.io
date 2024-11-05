@@ -32,6 +32,22 @@ julia> string(10, base = 9)
 "11"
    </code></pre>
 
+    <h2>小数点の桁数を指定して表示</h2>
+    <pre><code>
+julia> using Printf
+
+julia> @printf("%.3f\n", 2.4142135623)
+2.414
+</code></pre>
+
+    <h2>0埋めで6桁文の数字を表示</h2>
+    <pre><code>
+julia> using Printf
+
+julia> @printf("%06d", 1998)
+001998
+</code></pre>
+
     <h2>N桁の数字と一致</h2>
     <pre><code>
 julia> num = 3
@@ -42,22 +58,6 @@ false
 
 julia> occursin(Regex("\\d{$num}"), "123")
 true
-   </code></pre>
-
-    <h2>小数点の桁数を指定して表示</h2>
-    <pre><code>
-julia> using Printf
-
-julia> @printf("%.3f\n", 2.4142135623)
-2.414
-</code></pre>
-
-    <h2>6桁分0を右詰めして表示</h2>
-    <pre><code>
-julia> using Printf
-
-julia> @printf("%06d", 1998)
-001998
 </code></pre>
 
     <h2>配列から3以上5以下の要素を取得</h2>
