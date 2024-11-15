@@ -1,6 +1,8 @@
 name: Update badge
 
-on: push
+on:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   update_badge:
