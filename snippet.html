@@ -21,26 +21,6 @@
 </head>
 
 <body>
-    <h1>コードスニペット</h1>
-    <h2>8進数の11を10進数へ変換</h2>
-    <pre><code>
-julia> parse(Int, "11", base = 8)
-9
-   </code></pre>
-
-    <h2>10進数の10を9進数へ変換</h2>
-    <pre><code>
-julia> string(10, base = 9)
-"11"
-   </code></pre>
-
-    <h2>小数点の桁数を指定して表示</h2>
-    <pre><code>
-julia> using Printf
-
-julia> @printf("%.3f\n", 2.4142135623)
-2.414
-</code></pre>
 
     <h2>0埋めで6桁文の数字を表示</h2>
     <pre><code>
@@ -50,34 +30,13 @@ julia> @printf("%06d", 1998)
 001998
 </code></pre>
 
-    <h2>N桁の数字と一致</h2>
+    <h2>小数点の桁数を指定して表示</h2>
     <pre><code>
-julia> num = 3
-3
+julia> using Printf
 
-julia> occursin(Regex("\\d{$num}"), "12")
-false
-
-julia> occursin(Regex("\\d{$num}"), "123")
-true
+julia> @printf("%.3f\n", 2.4142135623)
+2.414
 </code></pre>
-
-    <h2>配列から3以上5以下の要素を取得</h2>
-    <pre><code>
-julia> arr = collect(1:10)
-julia> arr[3 .≤ arr .≤ 5]
-3-element Vector{Int64}:
-3
-4
-5
-</code></pre>
-
-    <h2>原点からの距離</h2>
-    <pre><code>
-julia> hypot(1, 2)
-2.23606797749979
-</code></pre>
-
 </body>
 
 </html>
