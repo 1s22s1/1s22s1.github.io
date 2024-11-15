@@ -1,0 +1,9 @@
+name: Update badge
+
+on: []
+
+jobs:
+  update_badge:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
