@@ -1,0 +1,9 @@
+name: Update badge
+on:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  update_badge:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -X PURGE https://camo.githubusercontent.com/f05461170864a9c99437bf7cac578be912b2a46e3190007218bd924495012c96/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d317332327331267468656d653d6b6163686f5f6761
