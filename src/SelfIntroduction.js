@@ -1,7 +1,8 @@
-const Home = () => {
+const SelfIntroduction = () => {
     return (
         <div>
             <h1>自己紹介</h1>
+
             <h2>お名前は？</h2>
             <p>原子軌道です。物理を理解したかったのですが、適性がなく悔しいのでこの名前にしました。</p>
 
@@ -68,4 +69,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default SelfIntroduction;

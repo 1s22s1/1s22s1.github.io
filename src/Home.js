@@ -7,11 +7,10 @@ const Home = () => {
 
             <ul>
                 <li><Link to="/self_introduction">自己紹介</Link></li>
-                <li><a href="qualification.html">保有資格</a></li>
-                <li><a href="oss.html">OSS活動</a></li>
-                <li><a href="handbook.html">詰将棋ハンドブック</a></li>
+                <li><Link to="/qualification">保有資格</Link></li>
+                <li><Link to="/oss">OSS活動</Link></li>
             </ul>
-        </div>
+        </div >
     )
 }
 
