@@ -1,10 +1,11 @@
 const Qualification = () => {
     const qualifications = [
+        { yearMonth: "2025/07", name: "実用数学技能検定準2級" },
         { yearMonth: "2025/07", name: "ビジネス実務法務検定3級" },
         { yearMonth: "2025/06", name: "丙種危険物取扱者" },
         { yearMonth: "2025/06", name: "ファイナンシャルプランナー2級" },
         { yearMonth: "2025/05", name: "簿記2級" },
-        { yearMonth: "2024/12", name: "情報処理安全確保支援士試験合格" },
+        { yearMonth: "2024/12", name: "情報処理安全確保支援士試験" },
         { yearMonth: "2024/11", name: "ファイナンシャルプランナー3級" },
         { yearMonth: "2024/10", name: "AWS DVA" },
         { yearMonth: "2024/09", name: "簿記3級" },
