@@ -1,15 +1,19 @@
 const Oss = () => {
+    const oss_arr = [
+        { href: "https://github.com/terrastruct/d2/issues/507", title: "n is lack in svg" },
+        { href: "https://github.com/ruby/csv/issues/237", title: "CSV::Table#headers returns[:\\\"\\\", :\\\"\\\"] when header is Japanese" },
+        { href: "https://github.com/JuliaLang/julia/issues/56208", title: "Using length() in the conditional expression for while is slow" },
+        { href: "https://github.com/microsoft/vscode/issues/231562", title: "terminal.integrated.enableMultiLinePasteWarning is setted to false" },
+        { href: "https://github.com/ruby/rss/pull/59", title: "Simplify sample code" },
+    ];
+
     return (
         <>
             <h1>OSS</h1>
 
             <ul>
-                <li><a href="https://github.com/terrastruct/d2/issues/507">n is lack in svg</a></li>
-                <li><a href="https://github.com/ruby/csv/issues/237" >CSV::Table#headers returns[:"", :""] when header is Japanese</a></li>
-                <li><a href="https://github.com/JuliaLang/julia/issues/56208" >Using length() inthe conditional expression for while is slow</a></li>
-                <li><a href="https://github.com/microsoft/vscode/issues/231562">terminal.integrated.enableMultiLinePasteWarning is setted to false</a></li >
-                <li><a href="https://github.com/ruby/rss/pull/59" >Simplify sample code</a></li >
-            </ul >
+                {oss_arr.map(e => <li><a href={e.href}>{e.title}</a></li>)}
+            </ul>
         </>
     )
 }
