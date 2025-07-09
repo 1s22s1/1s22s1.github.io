@@ -1,5 +1,5 @@
 const Oss = () => {
-    const oss_arr = [
+    const ossArr = [
         { href: "https://github.com/terrastruct/d2/issues/507", title: "n is lack in svg" },
         { href: "https://github.com/ruby/csv/issues/237", title: "CSV::Table#headers returns[:\\\"\\\", :\\\"\\\"] when header is Japanese" },
         { href: "https://github.com/JuliaLang/julia/issues/56208", title: "Using length() in the conditional expression for while is slow" },
@@ -12,7 +12,7 @@ const Oss = () => {
             <h1>OSS</h1>
 
             <ul>
-                {oss_arr.map(e => <li><a href={e.href}>{e.title}</a></li>)}
+                {ossArr.map(e => <li><a href={e.href}>{e.title}</a></li>)}
             </ul>
         </>
     )
