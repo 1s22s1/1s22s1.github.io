@@ -1,6 +1,6 @@
 const Oss = () => {
     return (
-        <div>
+        <>
             <h1>OSS</h1>
 
             <ul>
@@ -10,7 +10,7 @@ const Oss = () => {
                 <li><a href="https://github.com/microsoft/vscode/issues/231562">terminal.integrated.enableMultiLinePasteWarning is setted to false</a></li >
                 <li><a href="https://github.com/ruby/rss/pull/59" >Simplify sample code</a></li >
             </ul >
-        </div >
+        </>
     )
 }
 

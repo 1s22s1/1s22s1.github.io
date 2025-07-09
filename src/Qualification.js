@@ -18,16 +18,14 @@ const Qualification = () => {
         { yearMonth: "2024/02", name: "基本情報" },
     ]
 
-    const list = qualifications.map(qualification => <li>{qualification.yearMonth} {qualification.name}</li>)
-
     return (
-        <div>
+        <>
             <h1>保有資格</h1>
 
             <ul>
-                {list}
+                {qualifications.map(e => <li>{e.yearMonth} {e.name}</li>)}
             </ul>
-        </div >
+        </>
     )
 }
 
