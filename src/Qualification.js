@@ -1,3 +1,5 @@
+import { Container } from "@mui/material";
+
 const Qualification = () => {
     const qualifications = [
         { yearMonth: "2025/07", name: "実用数学技能検定準2級" },
