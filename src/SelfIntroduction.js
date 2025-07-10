@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import QAndA from "./QAndA";
 
 const SelfIntroduction = () => {
