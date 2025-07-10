@@ -1,3 +1,5 @@
+import { Container } from "@mui/material";
+
 const Oss = () => {
     const ossArr = [
         { href: "https://github.com/terrastruct/d2/issues/507", title: "n is lack in svg" },
@@ -8,13 +10,13 @@ const Oss = () => {
     ];
 
     return (
-        <>
+        <Container>
             <h1>OSS</h1>
 
             <ul>
                 {ossArr.map(e => <li><a href={e.href}>{e.title}</a></li>)}
             </ul>
-        </>
+        </Container>
     )
 }
 

@@ -1,3 +1,5 @@
+import { Container } from "@mui/material";
+
 const Qualification = () => {
     const qualifications = [
         { yearMonth: "2025/07", name: "実用数学技能検定準2級" },
@@ -20,13 +22,13 @@ const Qualification = () => {
     ]
 
     return (
-        <>
+        <Container>
             <h1>保有資格</h1>
 
             <ul>
                 {qualifications.map(e => <li>{e.yearMonth} {e.name}</li>)}
             </ul>
-        </>
+        </Container>
     )
 }
 
