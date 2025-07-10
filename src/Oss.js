@@ -1,5 +1,3 @@
-import { Container } from "@mui/material";
-
 const Oss = () => {
     const ossArr = [
         { href: "https://github.com/terrastruct/d2/issues/507", title: "n is lack in svg" },
