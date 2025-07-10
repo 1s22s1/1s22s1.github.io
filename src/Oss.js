@@ -10,13 +10,13 @@ const Oss = () => {
     ];
 
     return (
-        <Container>
+        <>
             <h1>OSS</h1>
 
             <ul>
                 {ossArr.map(e => <li><a href={e.href}>{e.title}</a></li>)}
             </ul>
-        </Container>
+        </>
     )
 }
 

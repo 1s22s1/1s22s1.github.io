@@ -27,7 +27,7 @@ const SelfIntroduction = () => {
     ];
 
     return (
-        <Container>
+        <>
             <h1>自己紹介</h1>
 
             {
@@ -35,7 +35,7 @@ const SelfIntroduction = () => {
                     <QAndA key={index} question={e.question} answer={e.answer} />
                 )
             }
-        </Container>
+        </>
     )
 }
 

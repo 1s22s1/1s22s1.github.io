@@ -22,13 +22,13 @@ const Qualification = () => {
     ]
 
     return (
-        <Container>
+        <>
             <h1>保有資格</h1>
 
             <ul>
                 {qualifications.map(e => <li>{e.yearMonth} {e.name}</li>)}
             </ul>
-        </Container>
+        </>
     )
 }
 
