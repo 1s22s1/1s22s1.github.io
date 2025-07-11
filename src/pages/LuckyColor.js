@@ -5,6 +5,8 @@ const LuckyColor = () => {
         console.log("call");
     }
 
+    const text = "今日のラッキーカラーは、(r, g, b)です。"
+
     return (
         <Grid
             container
@@ -12,7 +14,11 @@ const LuckyColor = () => {
             alignItems="center"
             style={{ height: '100vh' }}
         >
-            <Button variant="outlined" onClick={fortuneTelling}>占う</Button>
+            <div>
+                <Button variant="outlined" onClick={fortuneTelling}>占う</Button>
+
+                <p>{text}</p>
+            </div>
         </Grid>
     )
 }
