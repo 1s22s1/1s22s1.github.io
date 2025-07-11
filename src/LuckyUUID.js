@@ -1,8 +1,19 @@
+import { TwitterShareButton, TwitterIcon } from 'react-share';
 import { v4 as uuidv4 } from 'uuid';
 
 const luckyUUID = () => {
+    const text = `今日のラッキーUUIDは、${uuidv4()}です。`
+
     return (
-        <p>今日のラッキーUUIDは、{uuidv4()}です。</p>
+        <>
+            <p>{text}</p>
+
+            <hr />
+
+            <TwitterShareButton title={text}>
+                <TwitterIcon size={32} round={true} />
+            </TwitterShareButton>
+        </>
     )
 }
 
