@@ -1,4 +1,4 @@
-const QAndA = ({ question, answer }) => {
+const QAndA = ({ question, answer }: { question: string, answer: string }) => {
     return (
         <>
             <h2>{question}</h2>
