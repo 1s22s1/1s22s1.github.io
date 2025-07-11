@@ -1,6 +1,10 @@
 import { Button, Grid } from "@mui/material";
 
 const LuckyColor = () => {
+    const fortuneTelling = () => {
+        console.log("call");
+    }
+
     return (
         <Grid
             container
@@ -8,7 +12,7 @@ const LuckyColor = () => {
             alignItems="center"
             style={{ height: '100vh' }}
         >
-            <Button variant="outlined">占う</Button>
+            <Button variant="outlined" onClick={fortuneTelling}>占う</Button>
         </Grid>
     )
 }
