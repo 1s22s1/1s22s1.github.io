@@ -31,9 +31,9 @@ const LuckyColor = () => {
             <div>
                 <Button variant="outlined" onClick={fortuneTelling}>占う</Button>
 
-                <div>
-
-                    <p><span style={boxStyle} />{text}</p>
+                <div style={{ display: "flex", alignItems: "center", marginTop: "12px" }}>
+                    <span style={boxStyle} />
+                    <span>{text}</span>
                 </div>
             </div>
         </Grid>
