@@ -1,11 +1,13 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from "./Layout";
+
 import Home from "./Home";
 import SelfIntroduction from "./SelfIntroduction";
 import Oss from "./Oss"
 import Qualification from './Qualification';
 import LuckyUUID from "./LuckyUUID";
+import LuckyColor from "./pages/LuckyColor";
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from "./Layout";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route path="/oss" element={<Oss />} />
             <Route path="/qualification" element={<Qualification />} />
             <Route path="/lucky_uuid" element={<LuckyUUID />} />
+            <Route path="/lucky_color" element={<LuckyColor />} />
             <Route path="*" element={<p>ページは存在しないよ～。</p>} />
           </Route>
         </Routes>
