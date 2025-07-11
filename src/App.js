@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from "./Layout";
 
-import Home from "./Home";
-import SelfIntroduction from "./SelfIntroduction";
-import Oss from "./Oss"
-import Qualification from './Qualification';
-import LuckyUUID from "./LuckyUUID";
+import Home from "./pages/Home";
+import SelfIntroduction from "./pages/SelfIntroduction";
+import Oss from "./pages/Oss"
+import Qualification from './pages/Qualification';
+import LuckyUUID from "./pages/LuckyUUID";
 import LuckyColor from "./pages/LuckyColor";
 
 
