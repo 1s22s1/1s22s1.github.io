@@ -10,6 +10,7 @@ const Home = () => {
                 <li><Link to="/qualification">保有資格</Link></li>
                 <li><Link to="/oss">OSS活動</Link></li>
                 <li><Link to="/lucky_uuid">今日のラッキーUUID</Link></li>
+                <li><Link to="/lucky_color">今日のラッキーカラー</Link></li>
             </ul>
         </>
     )
